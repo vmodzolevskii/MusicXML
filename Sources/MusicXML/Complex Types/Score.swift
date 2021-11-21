@@ -27,7 +27,7 @@ public enum Score: Equatable {
     /// The `timewise` traversal of a MusicXML score.
     case timewise(Timewise)
     
-    func parsedObject() -> Any? {
+    public func parsedObject() -> Any? {
         switch self {
         case .partwise(let partwise):
              return partwise
